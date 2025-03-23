@@ -1,8 +1,6 @@
 // c:/Users/Dell/Desktop/biochat/src/app/config/genai/route.ts
 "use server"
-import { GoogleGenerativeAI,
-  HarmCategory,
-  HarmBlockThreshold, } from "@google/generative-ai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 import * as dotenv from "dotenv";
 
 dotenv.config()
