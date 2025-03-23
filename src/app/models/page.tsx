@@ -12,50 +12,22 @@ const ARModelViewerWithScript: React.FC = () => {
   // Define available models with descriptions
 const models = [
     {
-        name: "Glucks Model",
-        path: "3d-models/Glucks_Final_Branded.glb",
+        name: "Heart",
+        path: "3d-models/adult_heart.glb",
         description: "The Gluck ivory hinged knee (1891), a pioneering effort by Theophilus Gluck, represents one of the earliest attempts at knee replacement.\nConstructed from ivory, it faced significant challenges with fixation and wear.\nIts historical significance lies in its innovative concept, paving the way for future TKA development.",
-        year: 1891,
-        founder: "Theophilus Gluck"
     },
     {
-        name: "Insall Burstein Model",
-        path: "3d-models/insall-burstein_1.glb",
+        name: "CPR Procedure",
+        path: "3d-models/CPR.glb",
         description: "The Insall-Burstein knee (1978), developed by John Insall and Albert Burstein, introduced the posterior stabilized design.\nThis innovative design utilizes a cam and post mechanism to substitute for the posterior cruciate ligament.\nAimed to address issues of stability, particularly in flexion, that plagued earlier TKA designs.",
-        year: 1978,
-        founder: "John Insall and Albert Burstein"
+
 
     },
     {
-        name: "Smith Nephew Model",    
-        path: "3d-models/smith_nephew_branded.glb",
+        name: "Syringe",    
+        path: "3d-models/Syringe.glb",
         description: "The Smith & Nephew LEGION Total Knee System (2000s) represents a modern TKA design.\nIt focuses on enhancing kinematics and offering improved fixation options.\nThese advancements aim to provide greater stability and a wider range of motion for patients.",
-        year: 2000, // Approximate - use a more specific year for the LEGION system if possible
-        founder: "Smith & Nephew" // This is a company, not an individual surgeon
-
-    },
-    {
-        name: "Depuy Attune Model",
-        path: "3d-models/depuy_attune.glb",
-        description: "The DePuy ATTUNE Genesis Knee System (Present) reflects contemporary advancements in TKA.\nIt emphasizes personalized fit and alignment through advanced instrumentation.\nThis system aims to optimize implant positioning and improve long-term outcomes.",
-        year: 2010, // This is DePuy Attune - Genesis I was in the 80s -  put the year accordingly, it can be "Present"
-        founder: "DePuy Synthes" // This represents the company, not individual surgeons
-
-    },
-  {
-    name: "Oxford Partial Knee Model",
-    path: "3d-models/oxford_PKRR.glb",
-    description: "The Oxford Partial Knee Replacement (Present) is a modern unicompartmental knee arthroplasty.\nDesigned for a less invasive approach, it addresses isolated compartment arthritis.\nThis implant preserves healthy bone and ligaments, offering a targeted treatment option.",
-    year: 2010, // Use "Present" or the specific year of the latest design if possible
-        founder: "Biomet UK" //  Oxford knee earlier, now Biomet, list the correct company accordingly
-  },
-  {
-    name: "Duacondylar Knee Model",
-    path: "3d-models/duacondylar_knee.glb",
-    description: "The Duocondylar Knee (1971), developed at the Hospital for Special Surgery, was an early design in TKA.\nThis implant preserved both cruciate ligaments and often featured two separate tibial components.\nWhile influential, it faced limitations and served as a precursor to later, more successful designs.",
-        year: 1971,
-        founder: "Chitranjan Ranawat, John Insall, and others at HSS"
-  }
+    }
 ];
 
   // Handle model selection
@@ -118,12 +90,6 @@ const models = [
           
           {/* Model Description */}
           <div className="max-w-3xl mt-2 mb-2 text-center">
-            <p className='studio-sans text-xl mt-2 text-gray-700  dark:text-gray-300'>
-              <span className="font-semibold">Year:</span> {models[selectedModelIndex].year}
-            </p>
-            <p className='minigap text-xl mt-2 text-gray-700 dark:text-gray-300'>
-              <span className="font-semibold">Founder:</span> {models[selectedModelIndex].founder}
-            </p>
             <p className="minigap mt-1 text-m mt-2 text-gray-700 dark:text-gray-300">
               <span className="font-semibold">Description:</span>{models[selectedModelIndex].description}
             </p>

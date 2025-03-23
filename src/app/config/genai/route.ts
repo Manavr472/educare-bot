@@ -7,7 +7,6 @@ dotenv.config()
 
 
 const apiKey: string | undefined = process.env.GOOGLE_API_KEY;
-const modelName: string | undefined = process.env.MODEL_NAME;
 
 if (!apiKey) {
   throw new Error("Google API key is missing. Please set it in the .env file.");
