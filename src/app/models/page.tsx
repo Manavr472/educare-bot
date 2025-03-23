@@ -15,42 +15,37 @@ const models = [
   {
     name: "Heart",
     path: "3d-models/adult_heart.glb",
-    description: "A detailed 3D model of the human heart. It showcases its anatomy and structure in high detail.",
-  },
-  {
-    name: "CPR Procedure",
-    path: "3d-models/CPR.glb",
-    description: "A step-by-step 3D visualization of the CPR procedure. Ideal for understanding emergency techniques.",
+    description: "A detailed 3D model of the human heart, showcasing its anatomy and structure. This model is ideal for understanding the chambers, valves, and blood flow pathways. It provides a realistic representation for educational and medical purposes.",
   },
   {
     name: "Syringe",    
     path: "3d-models/Syringe.glb",
-    description: "A 3D model of a medical syringe. It illustrates its components and functionality clearly.",
+    description: "A 3D model of a medical syringe, showcasing its components such as the barrel, plunger, and needle. This model is helpful for understanding its usage in medical procedures and training purposes.",
   },
   {
     name: "Skeleton System",
     path: "3d-models/skeleton.glb",
-    description: "A comprehensive 3D model of the human skeletal system. Highlights its structure and key features.",
+    description: "A comprehensive 3D model of the human skeletal system, illustrating all major bones. This model is perfect for studying human anatomy, bone structure, and their interconnections in detail.",
   },
   {
     name: "Nervous System",
     path: "3d-models/nervous.glb",
-    description: "A detailed 3D representation of the human nervous system. Includes the brain and major nerves.",
+    description: "A 3D model of the human nervous system, highlighting the brain, spinal cord, and peripheral nerves. It provides an in-depth view of the body's communication network, essential for understanding neurological functions.",
   },
   {
     name: "Human Brain",
     path: "3d-models/human_brain_cerebrum__brainstem.glb",
-    description: "A 3D model of the human brain, showcasing its anatomy and structure in detail.",
+    description: "A detailed 3D model of the human brain, including the cerebrum, brainstem, and other key regions. This model is ideal for studying brain anatomy and understanding its complex functions.",
   },
   {
     name: "Human Skull",
     path: "3d-models/human_skull_free.glb",
-    description: "A detailed 3D model of the human skull. It highlights its anatomy and structure.",
+    description: "A realistic 3D model of the human skull, showcasing its structure and features. This model is useful for studying cranial anatomy and understanding the protective framework for the brain.",
   },
   {
     name: "Muscle System",
     path: "3d-models/male_full_body_ecorche.glb",
-    description: "A comprehensive 3D model of the human muscular system. It illustrates the major muscle groups.",
+    description: "A 3D model of the human muscular system, illustrating the arrangement of muscles throughout the body. This model is excellent for studying muscle anatomy and understanding their roles in movement and posture.",
   }
 ];
 
