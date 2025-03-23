@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '@google/model-viewer';
 import { ModelViewerElement, ModelViewerProgressEvent } from '../../../modelar';
+import path from 'path';
 
 const ARModelViewerWithScript: React.FC = () => {
   const modelViewerRef = useRef<ModelViewerElement>(null);
@@ -11,23 +12,46 @@ const ARModelViewerWithScript: React.FC = () => {
   
   // Define available models with descriptions
 const models = [
-    {
-        name: "Heart",
-        path: "3d-models/adult_heart.glb",
-        description: "The Gluck ivory hinged knee (1891), a pioneering effort by Theophilus Gluck, represents one of the earliest attempts at knee replacement.\nConstructed from ivory, it faced significant challenges with fixation and wear.\nIts historical significance lies in its innovative concept, paving the way for future TKA development.",
-    },
-    {
-        name: "CPR Procedure",
-        path: "3d-models/CPR.glb",
-        description: "The Insall-Burstein knee (1978), developed by John Insall and Albert Burstein, introduced the posterior stabilized design.\nThis innovative design utilizes a cam and post mechanism to substitute for the posterior cruciate ligament.\nAimed to address issues of stability, particularly in flexion, that plagued earlier TKA designs.",
-
-
-    },
-    {
-        name: "Syringe",    
-        path: "3d-models/Syringe.glb",
-        description: "The Smith & Nephew LEGION Total Knee System (2000s) represents a modern TKA design.\nIt focuses on enhancing kinematics and offering improved fixation options.\nThese advancements aim to provide greater stability and a wider range of motion for patients.",
-    }
+  {
+    name: "Heart",
+    path: "3d-models/adult_heart.glb",
+    description: "A detailed 3D model of the human heart. It showcases its anatomy and structure in high detail.",
+  },
+  {
+    name: "CPR Procedure",
+    path: "3d-models/CPR.glb",
+    description: "A step-by-step 3D visualization of the CPR procedure. Ideal for understanding emergency techniques.",
+  },
+  {
+    name: "Syringe",    
+    path: "3d-models/Syringe.glb",
+    description: "A 3D model of a medical syringe. It illustrates its components and functionality clearly.",
+  },
+  {
+    name: "Skeleton System",
+    path: "3d-models/skeleton.gltf",
+    description: "A comprehensive 3D model of the human skeletal system. Highlights its structure and key features.",
+  },
+  {
+    name: "Nervous System",
+    path: "3d-models/nervous.gltf",
+    description: "A detailed 3D representation of the human nervous system. Includes the brain and major nerves.",
+  },
+  {
+    name: "Human Brain",
+    path: "3d-models/human_brain_cerebrum_brainstem.glb",
+    description: "A 3D model of the human brain, showcasing its anatomy and structure in detail.",
+  },
+  {
+    name: "Human Skull",
+    path: "3d-models/human_skull_free.glb",
+    description: "A detailed 3D model of the human skull. It highlights its anatomy and structure.",
+  },
+  {
+    name: "Muscle System",
+    path: "3d-models/male_full_body_ecorche.glb",
+    description: "A comprehensive 3D model of the human muscular system. It illustrates the major muscle groups.",
+  }
 ];
 
   // Handle model selection
@@ -106,7 +130,7 @@ const models = [
           tone-mapping="neutral"
           shadow-intensity="1" 
           style={{ width: '100%', height: '70%' }}
-          className="md:mt-[-10%] mt-[-40%] z-10" // Using Tailwind classes for responsive margin
+          className="md:mt-[-8%] mt-[-40%] z-10" // Using Tailwind classes for responsive margin
         >
             <div className="progress-bar hide" slot="progress-bar" ref={progressBarRef}>
             <div className="update-bar" ref={updateBarRef}></div>

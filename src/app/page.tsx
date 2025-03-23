@@ -5,7 +5,14 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="flex flex-col items-center p-5 font-sans h-screen bg-black text-gray-100">
+    <div
+      className="flex flex-col items-center p-5 font-sans h-screen bg-black text-gray-100"
+      style={{
+      backgroundImage: "url('/bg_gif.gif')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      }}
+    >
       {/* Hero Section */}
       <div className="w-full max-w-5xl text-center py-20">
       <h1 className="text-6xl rekalgera font-bold text-white mb-6 ">
@@ -22,7 +29,7 @@ export default function Page() {
         <Link href="/chatbot">
         <h2 className="text-xl milker text-white mb-4">Gen AI Chatbot</h2>
         <p className="minigap text-gray-300">
-        Discover how our AI-powered chatbot can assist you with personalized, real-time medical education.
+          Discover how our AI-powered chatbot can assist you with personalized, real-time medical education.
         </p>
         </Link>
       </div>
@@ -30,7 +37,7 @@ export default function Page() {
         <Link href="/models">
         <h2 className="text-xl milker text-white mb-4">Immersive 3D Models</h2>
         <p className="minigap text-gray-300">
-        Explore complex medical concepts with interactive and immersive 3D models.
+          Explore complex medical concepts with interactive and immersive 3D models.
         </p>
         </Link>
       </div>
