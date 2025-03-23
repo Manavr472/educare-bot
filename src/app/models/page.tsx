@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useRef, useState } from 'react';
 import '@google/model-viewer';
 import { ModelViewerElement, ModelViewerProgressEvent } from '../../../modelar';
