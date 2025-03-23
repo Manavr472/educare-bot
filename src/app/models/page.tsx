@@ -29,17 +29,17 @@ const models = [
   },
   {
     name: "Skeleton System",
-    path: "3d-models/skeleton.gltf",
+    path: "3d-models/skeleton.glb",
     description: "A comprehensive 3D model of the human skeletal system. Highlights its structure and key features.",
   },
   {
     name: "Nervous System",
-    path: "3d-models/nervous.gltf",
+    path: "3d-models/nervous.glb",
     description: "A detailed 3D representation of the human nervous system. Includes the brain and major nerves.",
   },
   {
     name: "Human Brain",
-    path: "3d-models/human_brain_cerebrum_brainstem.glb",
+    path: "3d-models/human_brain_cerebrum__brainstem.glb",
     description: "A 3D model of the human brain, showcasing its anatomy and structure in detail.",
   },
   {
@@ -130,7 +130,7 @@ const models = [
           tone-mapping="neutral"
           shadow-intensity="1" 
           style={{ width: '100%', height: '70%' }}
-          className="md:mt-[-8%] mt-[-40%] z-10" // Using Tailwind classes for responsive margin
+          className="md:mt-[-6%] mt-[-40%] z-10" // Using Tailwind classes for responsive margin
         >
             <div className="progress-bar hide" slot="progress-bar" ref={progressBarRef}>
             <div className="update-bar" ref={updateBarRef}></div>
